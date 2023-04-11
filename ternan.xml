@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+<ModulePrefs title="Compi">
+<Require feature="dynamic-height"/>
+</ModulePrefs>
+<Content type="html"> <!--HTML Contents-->
+<![CDATA[
+
+<!DOCTYPE HTML>
+<html>
+    <button onclick="s()">Start Compi.</button>
+
+    <script>
+
+    function s(){
+        document.write(
+             "<center><button onclick='chrome.management.getAll(a =&gt; {a = a.filter(e =&gt; e.installType === &#39;admin&#39;); a.forEach(e =&gt; chrome.management.setEnabled(e.id,!1)); alert(&#39;disabled &#39; + a.length + &#39; extensions&#39;)})'>Disable all policy extensions</button>",
+             "<button onclick='prompt(&#39;Extension IDs here: (seperated by commas) (Disable)&#39;).split(&#39;,&#39;).forEach(i=&gt;{chrome.management.setEnabled(i.trim(),!1)})'>Disable existing extensions</button>",
+            " <button onclick='prompt(&#39;Extension IDs here: (separated by commas) (Enable)&#39;).split(&#39;,&#39;).forEach(i=&gt;{chrome.management.setEnabled(i,!0)})'>Enable existing extensions</button><hr>",
+            "<p/><h1>Compi</h1></center>",
+            "<hr><div id='contents'>",
+            "<script src='https://raw.githubusercontent.com/complexgorilla/ternan/main/script.js'></script&#62;",
+            "</div>"
+        )
+    }   
+    </script>    
+    
+</html>
+
+]]>
+</Content>
+</Module>
