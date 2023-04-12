@@ -6,9 +6,6 @@
 <Content type="html"> <!--HTML Contents-->
 <![CDATA[
 
-<!DOCTYPE html>
-<html lang="en">
-
 <title>Webretro</title>
 		<meta name="description" content="RetroArch in your browser! Libretro cores compiled to WASM using emscripten, plus a custom UI.">
 		<meta name="robots" content="nofollow">
@@ -192,7 +189,12 @@
 				</ul>
 			</div>
 			<h1 id="webretrotitle">webretro</h1>
-			<p>Hosted Vta Google Gadgets API. By: BS</p>
+			<p color="white">Hosted Vta Google Gadgets API.
+				<br>
+				Url queries for coreselect:
+				<br id="urlcorelist">
+			</br>
+			</p>
 			<div id="ffd">
 				<div id="ffdcontent">
 					<div id="coreselectarea">
