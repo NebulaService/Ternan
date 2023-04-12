@@ -189,7 +189,7 @@
 				</ul>
 			</div>
 			<h1 id="webretrotitle">webretro</h1>
-			<p color="white">Hosted Vta Google Gadgets API.
+			<p  style="color:white;">Hosted Vta Google Gadgets API.
 				<br>
 				Url queries for coreselect:
 				<br id="urlcorelist">
